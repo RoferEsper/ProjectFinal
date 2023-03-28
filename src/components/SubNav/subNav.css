@@ -1,0 +1,39 @@
+
+
+.categorias-suvnab li{
+    
+    list-style: none;
+    margin-top: 10px;
+    align-items: center;
+ 
+
+ 
+}
+.categorias-suvnab ul{
+    
+    margin-bottom: 0;
+    display: flex;
+   justify-content: space-evenly;
+}
+
+.link-cat {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.link-cat:hover {
+    padding: 5px 10px;
+    background: #ec8608;
+    color: #000;
+    border-radius: 15px;
+}
+@media only screen and (max-width:414px){
+    .link-cat{
+        font-size: 15px;
+        
+    }
+}

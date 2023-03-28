@@ -1,0 +1,139 @@
+.filter__widget{
+    margin-top: 1rem;
+}
+.filter__widget select{
+    margin:2px;
+    padding: 8px;
+    border: none ;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+}
+.filter__widget select:focus{
+    outline: none;
+}
+.filter__widget span {
+font-size:"8px"
+};
+.filter__widget select option{
+    background-color: #243763;
+    font-size: 0.9rem;
+    color:#fff;
+}
+
+.search__box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-right: 12px;
+    padding-left: 2px;
+    cursor:pointer;
+}
+.search__box input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+}
+.fav_icon{
+    position: relative;
+}
+.fav_icon span{
+ position:absolute;
+ top:70%;
+ right: 10%;
+ content: '';
+ background-color: red;
+ color: #fff;
+ font-size: .8rem;
+ border-radius: 50px;
+ padding: 2px 5px;
+
+}
+
+.products__page{
+    display: flex;
+    justify-content: space-around;
+}
+.filter__widget{
+    width: 16%;
+}
+.products__list{
+    width: 90%;
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+.filter__widget__responsive{
+    display:none;
+}
+.filter__container{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.filter__widget__responsive select{
+    margin-top: 13px;
+    padding: 1px 3px;
+    border:1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #243763;
+    color:#fff;
+   
+}
+.filter__widget__responsive select:focus{
+outline: none;
+}
+.fitlter__widget select option{
+    font-size:0.9rem;
+}
+.fitlter__widget option:hover{
+    background-color: #fff;
+    color:#243763;
+}
+.div_publicidad{
+    width: 100%;
+    margin-top:10px;
+    height: 200px;
+}
+.div_publicidad img{
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width:768px){
+    .filter__widget{
+        display: none;
+    }
+    .filter__widget__responsive{
+        display:flex;
+        margin-top: 5px;
+       
+    }
+ 
+    .products__page{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media only screen and (max-width:391px){
+    .filter__widget{
+        display: none;
+    }
+    .filter__container{
+        flex-direction: column;
+    }
+    .products__page{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .product__item{
+        border: #243763 1px solid;
+    }
+   
+}

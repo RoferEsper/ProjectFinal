@@ -1,0 +1,110 @@
+.product__item{
+    margin-bottom: 2rem;
+    box-shadow:
+       inset 0 -0.5em 0.5em #e8caac,
+             0 0  0 1px #ad8e70,
+             0.3em 0.3em 1em #ad8e70;
+}
+.product__info{
+    background-color: #e3ceb9;
+}
+.product__name{
+    
+    cursor: pointer;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    font-weight: 100;
+
+}
+.add__cart{
+    cursor: pointer;
+    position: relative;
+    top:-20px;
+    right: -42%;
+    padding: 2px 8px;
+    background-color:#e3ceb9;
+    border-radius: 100% 100% 0 0 ;
+    font-size: 20px;
+}
+.add__cart:hover{
+    top:-25px;
+    color: #243763;
+}
+.add__fav{
+    font-size: 0.8rem;
+    position: relative;
+    top:-25px;
+    left:-28px;
+}
+.add__fav :hover{
+    color:#FF6E31;
+    font-size: 1rem;
+}
+.product__sex{
+    font-size: 0.8rem;
+}
+.price{
+    color: #243763;
+    padding-right: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+};
+
+
+
+@media only screen and (max-width:768px){
+    .product__name{
+        font-size: 0.6rem;
+    }
+    .product__sex{
+        font-size: 8px;
+    }
+    .price{
+        font-size: 12px;
+    }
+    .add__cart{
+        right: -40%;
+    }
+}
+
+@media only screen and (max-width:414px){
+  
+    .product__name{
+        text-transform: uppercase;
+        font-size:18px;
+    }
+    .product__sex{
+        font-size: 9px;
+    }
+    .price{
+        font-size: 17px;
+    }
+    .add__cart{
+        right: -40%;
+    }
+    .modal__imgs{
+        display: none !important;
+    }
+    .modal__img{
+        width: 60%;
+    }
+    .modal__title{
+        margin:auto;
+        color:#243763;
+        font-size: 8px;
+    }
+    .talles__inputs{
+        display: none !important;
+    }
+    .product__info span{
+        display: none !important;
+    }
+    .cuotas__{
+        display: none !important;
+    }
+    .container__modal{
+        display: flex;
+        align-items: center;
+    }
+
+}

@@ -1,0 +1,129 @@
+.modal__container{
+  
+    box-shadow: 0 0 5px #ccc;
+    display: flex;
+    justify-content: space-around ;
+    padding: 30px 0;
+}
+.img__modal{
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    margin: 5px;
+
+}
+.img__modal img{
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    display: block;
+    object-fit: cover;
+}
+.box__modal{
+    width: 50%;
+    margin: 5px;
+}
+
+.row__box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.row__box h2 {
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 20px;
+}
+.row__box span{
+    color:#243763;
+}
+
+.box__modal p{
+    line-height: 1.5;
+    font-size: 14px;
+}
+.talles h2{
+    text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 15px;
+}
+.talles button{
+    width: 25px;
+    height: 25px;
+    border:1px solid #333;
+    border-radius: 2px;
+    outline:none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.thumb{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    display:flex;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.thumb img{
+    width: 60px;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+.thumb img.active{
+    opacity:1;
+    border:1px solif lightblue;
+}
+
+.modal__buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.add__tocart{
+    background-color: #243763;
+    color:white;
+    outline:none;
+    border:none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+
+}
+.salir__modal{
+    background-color:#FF6E31;
+    color:black;
+    outline:none;
+    border:none;
+    cursor: pointer;
+    padding: 5px 8px;
+    margin-right: 10px;
+    margin-top: 5px;
+
+}
+
+
+
+@media only screen and (max-width:414px){
+    .modal__container{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .modal__container div{
+        width: 90%;
+        margin: 5px;
+    }
+  
+    .thumb{
+        display: none;
+    }
+}

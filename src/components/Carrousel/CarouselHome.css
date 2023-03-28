@@ -1,0 +1,30 @@
+.carousel__container{
+   
+    width: 100vw;
+    margin-top: 15px;
+    height: 50vh;
+    
+}
+
+.carrousel__item {
+    height: 50vh;
+}
+.carrousel__item img{
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media only screen and (max-width:320px){
+    .carousel__container{
+        height: 40vh;
+    }
+    .carrousel__item{
+        height: 40vh;
+    }
+    .carrousel__item img{
+        height: 100%;
+        object-fit:cover;
+    }
+  
+}
